@@ -43,9 +43,11 @@ object Build : BuildType({
         root(PetclinicVcs)
     }
     steps {
-        maven {
-            goals = "clean package"
-            dockerImage = "maven:3.6.0-jdk-8"
+        powerShell {
+            name = "Test PowerShell Build Step"
+            scriptMode = script {
+                content = "echo 'Hello World'"
+            }
         }
     }
     triggers {
