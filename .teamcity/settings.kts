@@ -30,7 +30,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2019.2"
 
 project {
-    vcsRoot(PetclinicVcs)
+    vcsRoot(MyVcs)
     buildType(Build)
     subProject()
 }
@@ -40,7 +40,7 @@ object Build : BuildType({
     artifactRules = "target/*jar"
 
     vcs {
-        root(PetclinicVcs)
+        root(MyVcs)
     }
     steps {
         powerShell {
