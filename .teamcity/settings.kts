@@ -57,8 +57,8 @@ object Build : BuildType({
     }
 })
 
-object PetclinicVcs : GitVcsRoot({
-    name = "PetclinicVcs"
+object MyVcs : GitVcsRoot({
+    name = "MyVcs"
     url = "https://github.com/spring-projects/spring-petclinic.git"
     branch = "main"
 })
