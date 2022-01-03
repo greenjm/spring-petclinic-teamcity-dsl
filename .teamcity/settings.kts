@@ -32,6 +32,7 @@ version = "2018.2"
 project {
     vcsRoot(PetclinicVcs)
     buildType(Build)
+    subProject()
 }
 
 object Build : BuildType({
@@ -57,6 +58,7 @@ object Build : BuildType({
 object PetclinicVcs : GitVcsRoot({
     name = "PetclinicVcs"
     url = "https://github.com/spring-projects/spring-petclinic.git"
+    branch = "main"
 })
 
 
